@@ -1,0 +1,104 @@
+.container{padding:120px 20px 40px;max-width:900px;margin:auto}
+
+.AI-pixel{
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-style: italic;
+  text-align:center;
+  font-size: clamp(42px, 7vw, 80px);
+  letter-spacing:.06em;
+  margin: 0 0 18px 0;
+  color:#4b098a;
+}
+
+.inline-nav{
+  display:flex; gap:18px; justify-content:center; flex-wrap:wrap;
+  margin-bottom:22px;
+}
+
+.inline-nav a{
+  text-decoration:none; color:#111;
+  border-bottom:2px solid transparent; padding-bottom:4px;
+  font-weight:600;
+}
+
+.inline-nav a:hover{ border-color:#111 }
+
+.cover img{
+  width:100%; height:auto; display:block;
+  border-radius:8px;
+  filter: grayscale(100%);
+}
+
+.post{ margin-top:26px }
+
+.post-title{
+  text-align:center; font-size:28px; margin:18px 0 8px 0;
+  font-weight:700;
+}
+
+.author-badge{
+  float:right; display:flex; align-items:center; gap:10px;
+  margin: 6px 0 10px 14px;
+}
+
+.author-badge img{
+  width:54px; height:54px; object-fit:cover; border-radius:50%;
+  border:2px solid #eee;
+}
+
+.author-badge strong{ display:block }
+
+.muted{ color:#666 }
+
+.rikka{ 
+  border-radius:50%
+}
+.img-float-left{
+  float:left;
+  width:min(40%, 320px);
+  margin: 6px 16px 12px 0;
+}
+
+.follow{ margin-top:20px; font-weight:600 }
+
+.social-row{ display:flex; gap:12px; align-items:center }
+
+.social-row a{
+  width:36px; height:36px; display:grid; place-items:center;
+  border:2.5px solid #4b098a; border-radius:50%;
+  color:#111; text-decoration:none; transition:transform .2s ease, background .2s ease;
+}
+
+.social-row a:hover{ transform:translateY(-2px); background:#111; color:#fff }
+
+.site-header{
+  position:fixed; top:0; left:0; right:0; z-index:50;
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  padding:12px 20px; background:#fff; border-bottom:1px solid #e5e7eb;
+}
+
+.site-header .brand a{ 
+    text-decoration:none; font-weight:800; letter-spacing:.04em; color:#111 
+}
+
+.main-nav ul{ 
+    display:flex; gap:14px; list-style:none; margin:0; padding:0 
+}
+
+.main-nav a{ 
+    text-decoration:none; color:#111; padding:8px 10px; border-radius:8px 
+}
+
+.main-nav a:hover{ 
+    background:#f5f5f5 
+}
+
+.main-nav a.active{ 
+    background:#111; color:#fff 
+}
+
+@media (max-width:800px){
+  .img-float-left{ float:none; width:100%; margin: 8px 0 14px 0 }
+  .author-badge{ float:none; margin:10px 0 14px 0; justify-content:flex-end }
+}

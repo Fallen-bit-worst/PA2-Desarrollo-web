@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Contactanos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="stylecont.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand"><a href="index.html">AI Pixel</a></div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> INICIO</a></li>
+        <li><a href="blog.html"><i class="fa-solid fa-pen"></i> BLOG</a></li>
+        <li><a href="imagenes.html"><i class="fa-solid fa-image"></i> FIGURAS</a></li>
+        <li><a href="videos.html"><i class="fa-solid fa-video"></i> VIDEOS</a></li>
+        <li><a href="nosotros.html"><i class="fa-solid fa-users"></i> NOSOTROS</a></li>
+        <li><a class="active" href="contactanos.html"><i class="fa-solid fa-envelope"></i> CONTACTANOS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <h1 class="AI-pixel"><em>AI Pixel</em></h1>
+    <nav class="inline-nav">
+      <a href="index.html"><i class="fa-regular fa-heart"></i> INICIO</a>
+      <a href="nosotros.html"><i class="fa-solid fa-users"></i> NOSOTROS</a>
+      <a href="blog.html"><i class="fa-solid fa-pen"></i> BLOG</a>
+      <a href="imagenes.html"><i class="fa-regular fa-images"></i> FIGURAS</a>
+      <a href="videos.html"><i class="fa-solid fa-video"></i> VIDEOS</a>
+      <a href="contactanos.html" class="active-underline"><i class="fa-regular fa-address-card"></i> CONTACTANOS</a>
+    </nav>
+
+    <section class="contact-card">
+      <div class="contact-grid">
+
+        <section class="contact-info">
+          <h3>Información de Contacto</h3>
+
+          <table class="info-table">
+            <tr>
+              <th>Dirección:</th>
+              <td> FERIA GRAU — Av. Miguel Grau, Cercado de Lima, Lima, Perú</td>
+            </tr>
+            <tr>
+              <th>Teléfono:</th>
+              <td>937 309 773</td>
+            </tr>
+            <tr>
+              <th>Email:</th>
+              <td>detorex560@gmail.com</td>
+            </tr>
+          </table>
+
+          <div class="strip-title">Horario de Atención Presencial</div>
+          <div class="box-note">
+            <strong>Ventas:</strong><br>
+            Sabados y Domingos de 10am a 6pm
+          </div>
+
+          <figure class="info-photo">
+            <img src="fondo4.png" alt="Mostrador" />
+          </figure>
+        </section>
+
+        <section class="contact-form">
+          <h3>Déjanos tu comentario</h3>
+
+          <form action="#" method="post" novalidate>
+            <label>Nombre y Apellido</label>
+            <input type="text" name="nombre" placeholder="Tu nombre completo">
+
+            <label>Celular <span class="req">*</span></label>
+            <input type="tel" name="celular" placeholder="999 999 999" required pattern="[0-9\s]{6,15}" title="Solo números y espacios">
+
+            <label>Correo electrónico <span class="req">*</span></label>
+            <input type="email" name="correo" placeholder="nombre@dominio.com" required>
+
+            <label>RUC - Empresa (Opcional)</label>
+            <input type="text" name="ruc" placeholder="Ej: 20123456789">
+
+            <label>Mensaje</label>
+            <textarea name="mensaje" rows="5" placeholder="Detalla tu experiencia o tu consulta"></textarea>
+
+            <button type="submit" class="btn-primary">ENVIAR</button>
+          </form>
+        </section>
+
+      </div>
+
+      <div class="map-wrap">
+        <iframe
+         title="FERIA GRAU"
+        src="https://www.google.com/maps?q=-12.0599453,-77.0345682&z=17&output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <div class="social-row center">
+        <a href="https://www.facebook.com/profile.php?id=61581892613150" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/aipixel_0/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/c/51937309773" aria-label="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.tiktok.com/@aipixel_0" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>&copy; AI PIXEL</p></footer>
+</body>
+</html>
